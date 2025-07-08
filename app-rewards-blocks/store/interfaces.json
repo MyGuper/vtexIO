@@ -1,0 +1,14 @@
+{
+  "rewards-widget": {
+    "component": "rewards-widget"
+  },
+  "rewards-top-bar": {
+    "component": "rewards-top-bar"
+  },
+  "cashback": {
+    "component": "cashback"
+  },
+  "RewardsEverest":{
+    "component": "RewardsEverest"
+  }
+}

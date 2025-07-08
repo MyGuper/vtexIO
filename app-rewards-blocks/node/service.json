@@ -1,0 +1,22 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 10,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "rewards": {
+      "path": "/_v/rewards",
+      "public": true
+    },
+     "getForm": {
+      "path": "/_v/getForm",
+      "public": true
+    },
+    "postForm": {
+      "path": "/_v/postForm",
+      "public": true
+    }
+  }
+}

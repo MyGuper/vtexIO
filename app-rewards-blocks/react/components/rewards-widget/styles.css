@@ -1,0 +1,422 @@
+.widgetContainer {
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  z-index: 999998;
+}
+
+.floatButton {
+  border: none;
+  border-radius: 9999px;
+  padding: .5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.popupContainer {
+  background-color: #fff;
+  border-radius: .5rem;
+  display: flex;
+  min-width: 300px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), 0 3px 15px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.popupContainer--open {
+  height: 1000px;
+}
+
+.popupContainer--closed {
+  height: 0px;
+}
+
+.popupTitle {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popupCloseButton {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 4px;
+  top: 1rem;
+  cursor: pointer;
+}
+
+.popupContent {
+  max-width: 350px;
+}
+
+.popupMain {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 15px;
+}
+
+.popupPoints {
+  font-weight: 700;
+}
+
+.popupPointsRedirect {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  max-width: 150px;
+  padding: 10px 20px;
+}
+
+.popupPointsRedirect a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+.popupEmail {
+  color: #777;
+}
+
+.popupContentSection {
+  display: flex;
+  align-items: center;
+}
+
+.cashbackInfo {}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  min-width: 80px;
+  font-size: 12px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 0.2px solid #000;
+  border-radius: 20px;
+}
+
+.infoFooter {
+  padding: 0 20px;
+}
+
+.infoRow div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cashbackInfoTabs div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cashbackInfoTabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.popupTabs {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+  font-size: 12px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.popupTabs button.tabActive {
+  background-color: #000;
+  color: #fff;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popupTabs button {
+  background-color: transparent;
+  margin: 0px;
+  padding: 4px 8px;
+  cursor: pointer;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: #000;
+}
+
+.isAuthenticatedHeaderSpan {
+  font-size: 11px;
+  color: gray;
+}
+
+.popupHeader {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  align-items: center;
+  width: 100%;
+  font-size: 22px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.popupBackgroundBlack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.popupContentTutorial {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin: 1rem 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.listItemMark {
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  width: 1.75rem;
+  height: 1.75rem;
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefitsContent {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+
+}
+
+.buttonOutline {
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 80%;
+  margin: 8px auto;
+  display: block;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.discount p {
+  padding: 0;
+  margin: 0;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.discountPercentage {
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.bonusAmount {
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.terms {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+
+.benefitsTabs {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+  width: 100%;
+}
+
+.tabActive {
+  border-bottom: 2px solid #000;
+  margin-inline: 10px;
+  font-weight: bold;
+}
+
+.tabInactive {
+  color: #000;
+}
+
+.bonusContainer p {
+  padding: 0;
+  margin: 0;
+}
+
+.bonusContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.popupContentTutorial {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  padding: 0 20px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.number {
+  background: black;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.text {
+  font-size: 14px;
+  max-width: 85%;
+}
+
+.HeaderInfoImage {
+  position: absolute;
+  top: 15px;
+  font-size: 22px;
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 20px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.required {
+  color: red;
+}
+
+.input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: #3b82f6;
+  /* azul */
+  outline: none;
+}
+
+.error {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}
