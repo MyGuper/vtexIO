@@ -24,7 +24,7 @@ interface DynamicFormProps {
   onClose?: () => void
 }
 
-const DynamicForm: React.FC<DynamicFormProps> = ({ formSchema, onClose }) => {
+const DynamicForm: React.FC<DynamicFormProps> = ({ formSchema, onClose, sucessText }) => {
   const [success, setSuccess] = useState(false)
 
   const { post } = usePostForm()
@@ -79,7 +79,7 @@ const DynamicForm: React.FC<DynamicFormProps> = ({ formSchema, onClose }) => {
         <>
           {success && (
             <div className={styles.successMessage}>
-              Formulário enviado com sucesso!
+              {sucessText}
             </div>
           )}
           <Form className={styles.form}>

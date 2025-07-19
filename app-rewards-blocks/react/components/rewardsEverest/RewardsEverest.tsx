@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { useForm } from '../../hooks/useRewards'
 import styles from './RewardsEverest.css'
@@ -7,9 +7,11 @@ import DynamicForm from './RewardsSubmit'
 function RewardsEverest({
   imageUrl,
   isEnabled = true,
+  sucessText = 'Formulário enviado com sucesso!',
 }: {
   imageUrl?: string
   isEnabled?: boolean
+  sucessText?: string
 }) {
   const [isOpen, setIsOpen] = useState<boolean | null>(null)
   const { data: formData } = useForm()
@@ -35,7 +37,7 @@ function RewardsEverest({
         </button>
         <img alt="popup banner" src={imageUrl} />
         {formData && (
-          <DynamicForm formSchema={formData} onClose={() => setIsOpen(false)} />
+          <DynamicForm formSchema={formData} onClose={() => setIsOpen(false)} sucessText={sucessText} />
         )}
       </div>
     </div>
@@ -53,6 +55,12 @@ RewardsEverest.schema = {
       description: 'Toggle to enable or disable the Rewards Everest component',
       default: true,
     },
+  },
+  sucessText: {
+    type: 'string',
+    title: 'Success Text',
+    description: 'Text to display upon successful form submission',
+    default: 'Formulário enviado com sucesso!',
   },
   imageUrl: {
     type: 'string',
